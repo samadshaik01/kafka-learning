@@ -1,10 +1,10 @@
-spring:
-  kafka:
-    consumer:
-      bootstrap-servers: localhost:9092
-      group-id: user-group
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-      properties:
-        spring.json.trusted.packages: "org.example.common-library"
-        spring.json.value.default.type: org.example.commonlibrary.entity.User
+#spring:
+#  kafka:
+#    consumer:
+#      bootstrap-servers: localhost:9092
+#      group-id: user-group
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+#      properties:
+#        spring.json.trusted.packages: "org.example.common-library"
+#        spring.json.value.default.type: org.example.commonlibrary.entity.User
