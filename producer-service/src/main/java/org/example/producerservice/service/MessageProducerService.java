@@ -1,0 +1,26 @@
+package org.example.producer.service;
+
+import org.example.producer.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.stereotype.Service;
+
+@Service
+public class MessageProducerService {
+
+    @Autowired
+    private KafkaTemplate<String, String> kafkaTemplateString;
+
+    @Autowired
+    private KafkaTemplate<String, User> kafkaTemplateUser;
+
+    public void sendMessage(String message) {
+        kafkaTemplateString.send("demo-topic", message);
+    }
+
+    public void sendUser(User user) {
+        kafkaTemplateUser.send("user_topic", user);
+    }
+
+}
