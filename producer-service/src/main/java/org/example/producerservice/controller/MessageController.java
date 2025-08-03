@@ -1,10 +1,11 @@
-package org.example.producer.controller;
+package org.example.producerservice.controller;
 
-import org.example.producer.entity.User;
-import org.example.producer.service.MessageProducerService;
+
+import org.example.producerservice.service.MessageProducerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.example.commonlibrary.entity.User;
 
 @RestController
 @RequestMapping("api/v1/kafka/messages")

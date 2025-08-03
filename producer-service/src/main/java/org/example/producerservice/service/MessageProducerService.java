@@ -1,6 +1,6 @@
-package org.example.producer.service;
+package org.example.producerservice.service;
 
-import org.example.producer.entity.User;
+import org.example.commonlibrary.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.kafka.core.KafkaTemplate;

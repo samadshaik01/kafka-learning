@@ -1,4 +1,4 @@
-package org.example.producer.config;
+package org.example.producerservice.config;
 
 
 import lombok.Getter;

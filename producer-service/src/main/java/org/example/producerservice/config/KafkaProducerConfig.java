@@ -1,11 +1,10 @@
-package org.example.producer.config;
+package org.example.producerservice.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
-import org.example.producer.entity.User;
+import org.example.commonlibrary.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
@@ -28,7 +27,7 @@ public class KafkaProducerConfig {
     }
 
     @Bean
-    public NewTopic userTopic() {
+    public NewTopic userUserTopic() {
         return new NewTopic("user_topic", 1, (short) 1);
     }
 

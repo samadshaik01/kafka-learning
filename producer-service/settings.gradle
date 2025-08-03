@@ -1,0 +1,4 @@
+rootProject.name = 'producer-service'
+
+// Include the common-library project
+includeBuild('../common-library')
