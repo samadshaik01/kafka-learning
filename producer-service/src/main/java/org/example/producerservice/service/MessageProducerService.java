@@ -21,6 +21,9 @@ public class MessageProducerService {
 
     public void sendUser(User user) {
         kafkaTemplateUser.send("user_topic", user);
+        // Optionally, you can specify a key for the message ,key will decide which partition the message will go to
+        // kafkaTemplateUser.send("user_topic", "key_123",user);
+
     }
 
 }

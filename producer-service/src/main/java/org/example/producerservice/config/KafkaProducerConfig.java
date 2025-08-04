@@ -28,7 +28,7 @@ public class KafkaProducerConfig {
 
     @Bean
     public NewTopic userUserTopic() {
-        return new NewTopic("user_topic", 1, (short) 1);
+        return new NewTopic("user_topic", 3, (short) 1);
     }
 
     //Producer Config for String
